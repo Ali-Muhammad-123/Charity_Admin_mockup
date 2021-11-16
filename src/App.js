@@ -1,24 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
 
+import './App.css';
+import {Container, Row,Col} from 'reactstrap';
+import RegisterCharity from './Components/RegisterCharity';
+import PendingGrants from './Components/PendingGrants';
+import ContactInfo from './Components/ContactInfo';
+import MissionStatement from './Components/MissionStatement';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container style={{backgroundColor:'lightgray'}}>
+      <Row>
+        <h1 style={{color:'white'}}>Charity Admin</h1>
+        </Row>
+      <Row>
+      <Col>
+
+<Row style={{padding:'10px 10px 10px 10px'}}><RegisterCharity/></Row>
+<Row style={{padding:'10px 10px 10px 10px'}}><ContactInfo/></Row>
+
+      </Col>
+      <Col>
+
+<Row style={{padding:'10px 10px 10px 10px'}}><PendingGrants/></Row>
+<Row style={{padding:'10px 10px 10px 10px'}}><MissionStatement/></Row>
+
+      </Col>
+      </Row>
+
+    </Container>
   );
 }
 

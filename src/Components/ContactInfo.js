@@ -3,9 +3,15 @@ import { Container,Form,FormGroup,Row, Button , Input ,Col } from 'reactstrap';
 
 
 function ContactInfo(props) {
+  const buttonStyle={
+    backgroundColor: '#c5194f',
+    color:'white',
+    marginTop: '10px'
+    
+  }
     return (
-        <Container style={{ backgroundColor:'white' , borderRadius:'10px' , border:'2px solid lightgrey'}} >
-            <h3 style={{color:'darkblue'}}>Grant Notifications Contact information</h3>
+        <Container style={{ backgroundColor:'white' ,  border:'2px solid lightgrey'}} >
+            <h3 style={{color:'#617786'}}>Grant Notifications Contact information</h3>
             
 <Form>
     
@@ -13,6 +19,7 @@ function ContactInfo(props) {
     <Input
       id="imp1"
       name="Name"
+      
     />
   </FormGroup>
 
@@ -35,7 +42,7 @@ function ContactInfo(props) {
   </FormGroup>
   </Col>
       <Col style={{textAlign:'right'}}>
-  <Button>
+  <Button style={buttonStyle}>
     Submit
   </Button>
   </Col>

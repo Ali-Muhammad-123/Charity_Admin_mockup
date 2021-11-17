@@ -7,7 +7,7 @@ import ContactInfo from './Components/ContactInfo';
 import MissionStatement from './Components/MissionStatement';
 function App() {
   return (
-    <Container style={{backgroundColor:'lightgray'}}>
+    <Container style={{backgroundColor:'#f7f7f5'}}>
       <Row>
         <h1 style={{color:'white'}}>Charity Admin</h1>
         </Row>

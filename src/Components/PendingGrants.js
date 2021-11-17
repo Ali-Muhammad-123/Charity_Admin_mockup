@@ -4,10 +4,25 @@ import image1 from '../Assets/money-bag.png';
 import image2 from '../Assets/mail.png';
 
 function PendingGrants(props) {
+  const buttonStyle={
+    backgroundColor: '#c5194f',
+    color:'white'
+  }
+  const buttonStyle2={
+    backgroundColor: '#c5194f',
+    color:'white',
+    width:'142.11px'
+  }
+  
+  const colStyling={
+    textAlign:'center'
+  }
+
     return (
-        <Container style={{ backgroundColor:'white' , borderRadius:'10px' , border:'2px solid lightgrey'}}>
-    <h3 style={{color:'darkblue'}}>Pending Grants</h3>
-<Container style={{border:'2px solid lightgrey' , borderRadius:'20px'}}>
+      
+        <Container style={{ backgroundColor:'white', border:'2px solid lightgrey'}}>
+    <h3 style={{color:'#617786'}}>Pending Grants</h3>
+<Container style={{border:'2px solid lightgrey' , marginBottom:'10px' }}>
 
     <Row> 
         <Col>
@@ -64,43 +79,45 @@ function PendingGrants(props) {
 </Table>
         </Col>
         
-        <Col className='my-auto' style={{backgroundColor:'#4a4e6a' ,borderRadius:'10px 0px 0px 10px'}}>
+        <Col style={{backgroundColor:'#4a4e6a' ,borderRadius:'10px 0px 0px 10px' , paddingTop:'calc(15%)'}}>
             
         <h3 style={{textAlign:'center', color:'white'}}>Total in Pending Grants</h3>
         <h1 style={{textAlign:'center', color:'white'}}><span style={{verticalAlign:'top',textAlign:'center', color:'white' , fontSize:'1rem'}}> $  </span>760</h1>
         
         </Col>
     </Row>
+
+    
+
+</Container> 
     <Row className='justify-content-center'>
 
-      <Col md={2}>
-      <img src={image1} style={{width:'100%'}}/>
+      <Col md={2} style={colStyling}>
+      <img src={image1} style={{width:'61px'}}/>
       </Col>
-      <Col md={6}>
+      <Col md={6} style={colStyling}>
       <h4>Connect a bank account to recieve funds</h4>
       <p style={{color:'lightgrey'}}>text I couldnt read</p>
       </Col>
-      <Col md={2}>
-      <Button>Connect</Button>
+      <Col md={4} style={colStyling}>
+      <Button style={buttonStyle2}>Connect</Button>
       </Col>
   </Row>
 
   <Row className='justify-content-center'>
 
-      <Col md={2}>
-      <img src={image2} style={{width:'100%'}}/>
+      <Col md={2 } style={colStyling}>
+      <img src={image2} style={{width:'61px'}}/>
       </Col>
-      <Col md={6}>
+      <Col md={6} style={colStyling}>
       <h4>Request paper check via Mail</h4>
       <p style={{color:'lightgrey'}}>text I couldnt read</p>
       </Col>
-      <Col md={2}>
-      <Button>Request a Check</Button>
+      <Col md={4} style={colStyling}>
+      <Button style={buttonStyle}>Request a Check</Button>
       </Col>
   </Row>
 
-
-</Container>
 
         </Container>
     );
